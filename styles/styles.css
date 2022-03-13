@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-400-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-500-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-700-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-700-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #242424;
+  background-color: rgba(238, 238, 238, 1);
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* Pages */
+
+.page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  width: 100%;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background: rgba(0, 119, 101, 1);
+}
+
+.header-conteiner {
+  width: 100%;
+  max-width: 1219px;
+  margin: 0 auto;
+  padding-left: 55px;
+  padding-right: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-conteiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  position: relative;
+  display: flex;
+  gap: 23px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header-item {
+  position:relative;
+}
+
+.header-item:not(:last-child)::after {
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 29px;
+  right: -10px;
+  bottom: 0;
+  background-color: #ffffff;
+  content: "";
+}
+
+.main-block {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 84px;
+  color: rgba(255, 255, 255, 1);
+
+  width: 100%;
+  min-height: 403px;
+  margin: 84px 0 0 0;
+  background-image: url("../img/jpeg/main-backgraund.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  margin: 0;
+}
+
+.problem-conteiner {
+  width: 100%;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.introducing {
+  width: 100%;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.introducing-block {
+  display: flex;
+}
+
+.article-title {
+  font-size: 72px;
+  line-height: 84px;
+  color: rgba(0, 119, 101, 1);
+}
+
+.problem-text {
+  line-height: 38px;
+  text-align: left;
+}
+
+.conclusion-problem {
+  width: 100%;
+  min-height: 483px;
+  background-image: url("../img/jpeg/conclusion-backgraund.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.conclusion-text {
+  font-style: italic;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 893px;
+}
+
+.team-conteiner {
+  width: 100%;
+  max-width: 1219px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducing-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.introducing-title {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: left;
+  margin-left: 48px;
+}
+.introducing-text {
+  font-size: 32px;
+  line-height: 37px;
+  text-align: left;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding: 0;
+}
+
+.team-item {
+  min-width: 350px;
+}
+
+.avatar {
+  display: inline-flex;
+
+  width: 168px;
+  height: 168px;
+
+  border-radius: 50%;
+
+  color: #ffffff00;
+}
+
+.hendricks {
+  background-image: url("../img/jpeg/hendricks.jpg");
+}
+
+.chugtai {
+  background-image: url("../img/jpeg/chugtai.jpg");
+}
+
+.gilfoyle {
+  background-image: url("../img/jpeg/gilfoyle.jpg");
+}
+
+.dunn {
+  background-image: url("../img/jpeg/dunn.jpg");
+}
+
+.hall {
+  background-image: url("../img/jpeg/hall.jpg");
+}
+
+.bighetti {
+  background-image: url("../img/jpeg/bighetti.jpg");
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.team-description {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-conteiner {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 1);
+  min-height: 176px;
+}
+
+.footer-text {
+  width: 540px;
+  margin-top: 48px;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+}
